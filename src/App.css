@@ -178,7 +178,7 @@ h3 {
 }
 
 .ndetail {
-  margin-right: 200px;
+  margin-right: 100px;
 }
 
 .borders {
@@ -286,7 +286,28 @@ h3 {
     margin-left: unset;
     margin-top: 10px;
   }
+  .header {
+    font-size: 12px;
+  }
+
+  .inner-details {
+    flex-direction: column;
+  }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 1040px) {
+  .cdetails {
+    flex-direction: column;
+  }
+
+  .flag {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .details {
+    margin-right: auto;
+    margin-left: unset;
+    margin-top: 50px;
+  }
 }
