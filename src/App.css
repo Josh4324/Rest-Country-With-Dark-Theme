@@ -14,7 +14,7 @@
 .App {
   background-color: var(--shd-color);
   color: var(--text-color);
-  width: 100%;
+  max-width: 100%;
 }
 
 body {
@@ -22,10 +22,10 @@ body {
   padding: 0;
   background-color: var(--shd-color);
   color: var(--text-color);
+  width: 100%;
 }
 
 .header {
-  width: 100%;
   background-color: var(--bg-color);
   box-shadow: 3px 3px 3px var(--shd-color);
 }
@@ -36,7 +36,6 @@ body {
   margin-right: auto;
   display: flex;
   padding: 1rem;
-
 }
 
 .right {
@@ -50,7 +49,6 @@ body {
 }
 
 .main {
-  width: 100%;
   font-size: 14px;
 }
 
@@ -71,8 +69,8 @@ body {
 }
 
 .isearch {
-  padding-left: 60px;
-  width: 300px;
+  padding-left: 50px;
+  width: 250px;
   height: 30px;
   border-radius: 5px;
   background-color: var(--bg-color);
@@ -120,7 +118,6 @@ body {
   border-radius: 5px;
 }
 
-
 .item-body {
   padding: 1rem;
 }
@@ -138,7 +135,6 @@ h3 {
   background-color: var(--bg-color);
   overflow: auto;
   border-top: 2px solid var(--shd-color);
-
 }
 
 .melement {
@@ -210,7 +206,6 @@ h3 {
   display: flex;
   width: 75%;
   flex-wrap: wrap;
-
 }
 
 .blockborder {
@@ -219,9 +214,11 @@ h3 {
   padding-top: 5px;
 }
 
-@media (max-width:540px) {
-
-
+@media (max-width: 540px) {
+  .App {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
   .inner-header {
     width: 90%;
     padding-top: 1rem;
@@ -231,9 +228,15 @@ h3 {
   }
 
   .isearch {
-    padding-left: 60px;
-    width: 150px;
+    padding-left: 50px;
+    width: 100%;
+  }
 
+  .icon {
+    position: relative;
+    left: 20px;
+    top: 25px;
+    font-size: 12px;
   }
 
   .inner-main {
@@ -252,20 +255,38 @@ h3 {
 
   .item {
     flex-basis: 300px;
-    margin-right: auto;
     margin-left: auto;
-
+    margin-right: auto;
   }
 
   .container {
-    display: flex;
     width: 100%;
     flex-wrap: wrap;
     margin-top: 40px;
     justify-content: unset;
     align-content: unset;
     padding-bottom: 20px;
+    display: flex;
+  }
+
+  .search {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .searchModal {
+    left: 10px;
+    width: 250px;
+    max-height: 300px;
+  }
+
+  .sright {
+    align-self: flex-start;
+    margin-left: unset;
+    margin-top: 10px;
   }
 }
 
-@media (max-width:360px) {}
+@media (max-width: 360px) {
+}

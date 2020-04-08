@@ -77,7 +77,7 @@ const Home = props => {
     <div className="main">
       <div className="inner-main">
         <div className="search">
-          <div>
+          <div className="sleft">
             <FontAwesomeIcon className="fas icon" icon={faSearch} />
             <input
               className="isearch"
