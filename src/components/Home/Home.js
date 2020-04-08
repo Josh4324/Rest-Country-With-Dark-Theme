@@ -82,8 +82,8 @@ const Home = props => {
             <input
               className="isearch"
               type="search"
-              name=""
-              id=""
+              name="search"
+              id="search"
               placeholder="Search for a country..."
               onChange={onSearch}
             />
@@ -108,7 +108,12 @@ const Home = props => {
             </div>
           </div>
           <div className="sright">
-            <select className="filter" onChange={onfilter} name="" id="">
+            <select
+              className="filter"
+              onChange={onfilter}
+              name="region"
+              id="region"
+            >
               <option value="">Filter by Region</option>
               <option value="Africa">Africa </option>
               <option value="Americas">America</option>
