@@ -122,7 +122,11 @@ const Home = props => {
         <div className="container">
           {countries.map(country => {
             return (
-              <div key={country.name} className="item">
+              <div
+                key={country.name}
+                className="item"
+                onClick={evt => props.history.push(`/country/${country.name}`)}
+              >
                 <div>
                   <img className="img" src={country.flag} alt={country.name} />
                 </div>

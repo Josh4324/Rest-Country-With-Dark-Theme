@@ -116,6 +116,7 @@ body {
   background-color: var(--bg-color);
   margin-bottom: 40px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .item-body {
@@ -309,5 +310,12 @@ h3 {
     margin-right: auto;
     margin-left: unset;
     margin-top: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .dimg {
+    width: 300px;
+    height: 200px;
   }
 }
