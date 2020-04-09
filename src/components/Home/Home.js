@@ -84,6 +84,7 @@ const Home = props => {
               type="search"
               name="search"
               id="search"
+              aria-label="search"
               placeholder="Search for a country..."
               onChange={onSearch}
             />
@@ -112,6 +113,7 @@ const Home = props => {
               className="filter"
               onChange={onfilter}
               name="region"
+              aria-label="filter"
               id="region"
             >
               <option value="">Filter by Region</option>
