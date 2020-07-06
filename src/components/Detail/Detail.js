@@ -77,10 +77,11 @@ const Detail = props => {
                         }
                         className="borderbut"
                       >
-                        {globalcountries.map(newcountry => {
+                        { globalcountries.map(newcountry => {
                           if (newcountry.alpha3Code === country) {
                             return newcountry.name;
                           }
+                          return ""
                         })}
                       </span>
                     );
