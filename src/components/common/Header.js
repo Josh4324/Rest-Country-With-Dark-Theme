@@ -21,7 +21,7 @@ const Header = () => {
       setColor(currentTheme);
     }
     return () => {};
-  });
+  }, []);
   return (
     <div className="header">
       <div className="inner-header">
