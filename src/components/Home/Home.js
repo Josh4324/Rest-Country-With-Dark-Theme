@@ -7,6 +7,9 @@ const Home = props => {
   let [countries, setCountries] = useState([]);
   let [searchResult, setSearchResult] = useState([]);
   let [searchValue, setSearchValue] = useState("");
+  const div = {
+    width: '100%'
+  }
   const shuffle = function(array) {
     var currentIndex = array.length;
     var temporaryValue, randomIndex;

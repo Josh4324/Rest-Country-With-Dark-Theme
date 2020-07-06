@@ -18,6 +18,7 @@ const Header = () => {
 
     if (currentTheme) {
       document.documentElement.setAttribute("data-theme", currentTheme);
+      setColor(currentTheme);
     }
     return () => {};
   });
